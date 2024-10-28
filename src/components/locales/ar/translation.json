@@ -1,11 +1,15 @@
 {
   "navbar": {
-    "home": "Home", "about": "About Us", "services": "Services",  "projects": "PROJECTS", "blog":"Blog", "book": "Book A Call"
+    "home": "الرئيسية",
+    "about": "من نحن",
+    "services": "خدماتنا",
+    "projects": "المشاريع",
+    "blog": "المدونة",
+    "book": "احجز مكالمة"
   },
-  "header": {
-    "chooseLanguage": "Choose Language:"
-  },
-  "mainSection": {
-    "title": "STEP BY STEP"
+  "hero": {
+    "title": "تمكين الأعمال من خلال التكنولوجيا",
+    "subtitle": "خدمات وحلول متقدمة",
+    "description": "خدمات وحلول متقدمة هي شريكك الموثوق به في استثمار الذكاء الاصطناعي والتعلم الآلي وتحليلات البيانات وتطوير الويب وتجربة المستخدم/المستخدم النهائي، وخدمات DevOps والحوسبة السحابية لدفع الابتكار ونمو الأعمال. استكشف حلولنا في التكنولوجيا المالية مثل AWRAG Insights وTokenSage لتكتشف كيف نصنع مستقبل التكنولوجيا."
   }
 }

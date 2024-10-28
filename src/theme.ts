@@ -91,6 +91,8 @@ const space = {
   8: "40px",
   9: "48px",
   10: "64px",
+  11: "72px",
+  12: "80px",
 };
 
 const styles = {
