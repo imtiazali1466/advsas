@@ -1,6 +1,11 @@
 {
   "navbar": {
-    "home": "Home", "about": "About Us", "services": "Services",  "projects": "PROJECTS", "blog":"Blog", "book": "Book A Call"
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "projects": "PROJECTS",
+    "blog": "Blog",
+    "book": "Book A Call"
   },
   "hero": {
     "title": "Empowering Businesses Through Technology",
@@ -10,5 +15,11 @@
   "buttons": {
     "getStarted": "Get Started",
     "letsExplore": "Let's Explore"
+  },
+  "about": {
+    "welcome": "Welcome to Advance Services and Solutions",
+    "description_part_1": "At Advance Services and Solutions, we specialize in delivering transformative IT services that empower businesses to excel in today’s fast-paced, technology-driven world. From ",
+    "bold_part": "AI/ML NLP to Cloud Solutions",
+    "description_part_2": ". Our team of experts is dedicated to driving efficiency, innovation, and growth."
   }
 }
