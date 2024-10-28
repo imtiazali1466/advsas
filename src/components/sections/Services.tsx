@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Flex, Heading, Text, Box, Icon } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
 import {
@@ -7,40 +7,48 @@ import {
   FaCode,
   FaRegClipboard,
   FaCloud,
-} from "react-icons/fa"; // Import relevant icons
+} from "react-icons/fa";
 import theme from "@/theme";
+import "./ServiceSection.css"; // Import the CSS file for animations
 
 const ServiceSection: React.FC = () => {
   const { t } = useTranslation();
+  const [animate, setAnimate] = useState(false); // State to trigger animation
 
-  // Service card data
   const services = [
     {
       title: t("service.cards.card_1.title"),
       subtitle: t("service.cards.card_1.subtitle"),
-      icon: FaBrain, // Icon for the first card
+      icon: FaBrain,
     },
     {
       title: t("service.cards.card_2.title"),
       subtitle: t("service.cards.card_2.subtitle"),
-      icon: FaDatabase, // Icon for the second card
+      icon: FaDatabase,
     },
     {
       title: t("service.cards.card_3.title"),
       subtitle: t("service.cards.card_3.subtitle"),
-      icon: FaCode, // Icon for the third card
+      icon: FaCode,
     },
     {
       title: t("service.cards.card_4.title"),
       subtitle: t("service.cards.card_4.subtitle"),
-      icon: FaRegClipboard, // Icon for the fourth card
+      icon: FaRegClipboard,
     },
     {
       title: t("service.cards.card_5.title"),
       subtitle: t("service.cards.card_5.subtitle"),
-      icon: FaCloud, // Icon for the fifth card
+      icon: FaCloud,
     },
   ];
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setAnimate(true); // Trigger animation after 100ms
+    }, 100);
+    return () => clearTimeout(timer); // Cleanup the timer
+  }, []);
 
   return (
     <Flex
@@ -55,7 +63,7 @@ const ServiceSection: React.FC = () => {
         fontSize={{ base: "md", md: "sm" }}
         fontWeight={600}
         textAlign="center"
-        mb={5} // Add margin below the heading
+        mb={5}
       >
         {t("service.title")}
       </Heading>
@@ -75,25 +83,27 @@ const ServiceSection: React.FC = () => {
         {t("service.subtitle")}
       </Text>
 
-      <Flex
-        wrap="wrap" // Allow cards to wrap to the next line
-        justifyContent="center" // Center the cards
-        maxW="1200px" // Limit the maximum width of the grid
-        width="100%"
-      >
+      <Flex wrap="wrap" justifyContent="center" maxW="1200px" width="100%">
         {services.map((service, index) => (
           <Box
             key={index}
+            className={`service-box ${animate ? "animate" : ""}`} // Add the animate class
             borderWidth={1}
             borderRadius="lg"
-            boxShadow="xl" // Enhanced box shadow
-            bg={theme.colors.lavender[500]} // Card background color
+            boxShadow="xl"
+            bg={theme.colors.lavender[500]}
             py={10}
             px={5}
-            width="380px" // Fixed width for each card
-            mx={2} // Add horizontal margin for spacing
-            my={4} // Vertical margin for spacing
-            minWidth="380px" // Ensure the card does not shrink below 380px
+            mx={2}
+            my={4}
+            minWidth="250px"
+            width="30%"
+            transition="transform 0.2s, box-shadow 0.2s"
+            _hover={{
+              transform: "scale(1.05)",
+              boxShadow: "2xl",
+            }}
+            cursor={"pointer"}
           >
             <Flex
               direction="column"
@@ -101,10 +111,10 @@ const ServiceSection: React.FC = () => {
               justifyContent="center"
             >
               <Icon
-                as={service.icon} // Use the icon defined in each service
-                boxSize={16} // Adjust icon size
-                color={theme.colors.primary[600]} // Set icon color for contrast
-                mb={4} // Margin bottom for spacing
+                as={service.icon}
+                boxSize={16}
+                color={theme.colors.primary[600]}
+                mb={4}
               />
               <Heading
                 as="h3"

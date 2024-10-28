@@ -1,0 +1,10 @@
+.service-box {
+  opacity: 0; /* Start invisible */
+  transform: translateY(20px); /* Start slightly below */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Animate opacity and transform */
+}
+
+.service-box.animate {
+  opacity: 1; /* Fade in */
+  transform: translateY(0); /* Move to original position */
+}
