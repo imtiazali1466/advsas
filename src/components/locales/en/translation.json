@@ -30,5 +30,11 @@
     "awrag": "AWRAG Insights", "token": "TokenSage",
     "final_description": " to help businesses harness the power of data and blockchain.",
     "and": " and "
+  },
+  "still_have_question": {
+    "title": "Still Have Questions?",
+    "subtitle": "Can’t find the answer you’re looking for? Please chat to our friendly team.",
+    "button": "Get In touch"
   }
+  
 }
