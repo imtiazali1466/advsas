@@ -45,20 +45,20 @@ const StillHaveQuestionsComponent: React.FC = () => {
         <Flex direction="column" textAlign="center" alignItems="center">
           <Heading
             as="h3"
-            fontSize={{ base: "lg", md: "2xl" }}
+            fontSize={{ base: "lg", md: "3xl" }}
             fontWeight={800}
-            color="black.600"
+            color="black.900"
           >
             {t("still_have_question.title")}
           </Heading>
           <Text
-            fontWeight={500}
-            maxW="lg"
-            fontSize={{ base: "md", md: "lg" }}
+            fontWeight={600}
+            maxW="2xl"
+            fontSize={{ base: "md", md: "xl" }}
             color="black.600"
             mb={4}
-            transition="color 0.2s" // Transition effect for color change
-            _hover={{ color: "black.500" }} // Change color on hover
+            transition="color 0.2s"
+            _hover={{ color: "black.500" }}
           >
             {t("still_have_question.subtitle")}
           </Text>
@@ -70,7 +70,7 @@ const StillHaveQuestionsComponent: React.FC = () => {
               <ArrowForwardIcon
                 transform={isArabic ? "rotate(-135deg)" : "rotate(-45deg)"}
               />
-            } // Arrow icon with rotation based on language
+            }
             _hover={{
               transform: "scale(1.05)",
               transition: "0.2s ease-in-out",
