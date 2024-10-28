@@ -1,4 +1,3 @@
-// @ts-expect-error charaka UI Error for no reason - vscode issue
 import { extendTheme } from "@chakra-ui/react";
 
 const theme = extendTheme({

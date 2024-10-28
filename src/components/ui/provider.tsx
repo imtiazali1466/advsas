@@ -6,7 +6,7 @@ import theme from "../../theme";
 
 export function Provider(props: React.PropsWithChildren) {
   return (
-    <ChakraProvider value={theme}>
+    <ChakraProvider theme={theme}>
       <ColorModeProvider>{props.children}</ColorModeProvider>
     </ChakraProvider>
   );
