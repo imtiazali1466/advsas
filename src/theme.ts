@@ -98,7 +98,7 @@ const styles = {
     body: {
       bg: "background",
       color: "text",
-      padding: space[4],
+      padding: 0,
       margin: 0,
     },
     ".chakra-container": {

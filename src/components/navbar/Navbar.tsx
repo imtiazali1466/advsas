@@ -107,10 +107,10 @@ const Navbar: React.FC = () => {
           >
             {t(`navbar.book`)}
           </Button>
+          {/* Language Selection and Social Icons for Desktop */}
         </HStack>
 
-        {/* Language Selection and Social Icons */}
-        <HStack spacing={4} justify="flex-end" mt={4} px={6}>
+        <HStack spacing={4}>
           <Menu>
             <MenuButton as={Button} variant="outline" colorScheme="teal">
               {i18n.language === "en" ? "English" : "Arabic"}
@@ -149,7 +149,7 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Navigation Links */}
       <Collapse in={isOpen}>
-        <VStack spacing={4} align="start" mt={4} px={6}>
+        <VStack spacing={4} align="start" mt={4} p={6} bg="navbar">
           {sections.map((section) => (
             <NavbarLink
               key={section}
@@ -159,6 +159,45 @@ const Navbar: React.FC = () => {
               {t(`navbar.${section}`)}
             </NavbarLink>
           ))}
+
+          {/* Language Selection and Social Icons moved to the collapsed menu */}
+          <HStack spacing={4} mt={4}>
+            <Menu>
+              <MenuButton as={Button} variant="outline" colorScheme="teal">
+                {i18n.language === "en" ? "English" : "Arabic"}
+              </MenuButton>
+              <MenuList>
+                <MenuItem onClick={() => changeLanguage("en")}>
+                  English
+                </MenuItem>
+                <MenuItem onClick={() => changeLanguage("ar")}>Arabic</MenuItem>
+              </MenuList>
+            </Menu>
+            <IconButton
+              as="a"
+              href="https://twitter.com"
+              aria-label="Twitter"
+              icon={<FaTwitter color="text" />}
+              target="_blank"
+              variant="link"
+            />
+            <IconButton
+              as="a"
+              href="https://instagram.com"
+              aria-label="Instagram"
+              icon={<FaInstagram color="text" />}
+              target="_blank"
+              variant="link"
+            />
+            <IconButton
+              as="a"
+              href="https://github.com"
+              aria-label="GitHub"
+              icon={<FaGithub color="text" />}
+              target="_blank"
+              variant="link"
+            />
+          </HStack>
         </VStack>
       </Collapse>
     </Box>
