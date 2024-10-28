@@ -34,6 +34,18 @@ const colors = {
     800: "#474D5D",
     900: "#2C2A31", // Dark shade
   },
+  lavender: {
+    // New color palette
+    100: "#D3D5FF", // Light shade
+    200: "#A7A9FF",
+    300: "#7B7FFF",
+    400: "#4F52FF",
+    500: "#9796F0", // Main color
+    600: "#7878D8",
+    700: "#5A5ABC",
+    800: "#3C3C99",
+    900: "#1E1E66", // Dark shade
+  },
   black: {
     100: "#F5F5F5", // Lightest shade of black
     200: "#E0E0E0",
@@ -91,6 +103,8 @@ const space = {
   8: "40px",
   9: "48px",
   10: "64px",
+  11: "72px",
+  12: "80px",
 };
 
 const styles = {

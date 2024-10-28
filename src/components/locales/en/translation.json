@@ -1,8 +1,68 @@
 {
-  "header": {
-    "chooseLanguage": "Choose Language:"
+  "navbar": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "projects": "PROJECTS",
+    "blog": "Blog",
+    "book": "Book A Call"
   },
-  "mainSection": {
-    "title": "STEP BY STEP"
+  "hero": {
+    "title": "Empowering Businesses Through Technology",
+    "subtitle": "Advance Services and Solutions",
+    "description": "Advance Services and Solutions is your trusted partner in leveraging AI/ML, Data Analytics, Web Development, UI/UX, DevOps, and Cloud to drive innovation and business growth. Explore our Fintech solutions like AWRAG Insights and TokenSage to discover how we are shaping the future of technology."
+  },
+  "buttons": {
+    "getStarted": "Get Started",
+    "letsExplore": "Let's Explore"
+  },
+  "about": {
+    "welcome": "Welcome to Advance Services and Solutions",
+    "description_part_1": "At Advance Services and Solutions, we specialize in delivering transformative IT services that empower businesses to excel in today’s fast-paced, technology-driven world. From ",
+    "bold_part": "AI/ML NLP to Cloud Solutions",
+    "description_part_2": ". Our team of experts is dedicated to driving efficiency, innovation, and growth."
+  },
+  "who_we_are": {
+    "title": "Who We Are?",
+    "description": "We are a team of experienced professionals passionate about using technology to solve complex business challenges. Our mission is to offer comprehensive IT services and solutions tailored to the needs of modern businesses. With deep expertise in ",
+    "bold_parts": "AI/ML NLP Data Analytics Web Development UI/UX Design DevOps Cloud Infrastructure ",
+    "additional_description": "We also specialize in Fintech, developing advanced platforms like ",
+    "awrag": "AWRAG Insights",
+    "token": "TokenSage",
+    "final_description": " to help businesses harness the power of data and blockchain.",
+    "and": " and "
+  },
+  "still_have_question": {
+    "title": "Still Have Questions?",
+    "subtitle": "Can’t find the answer you’re looking for? Please chat to our friendly team.",
+    "button": "Get In touch"
+  },
+  "service": {
+    "title": "Our services",
+    "at": "At ",
+    "company_name": "Advance Services and Solutions",
+    "subtitle": ", we offer a diverse range of services designed to enhance your business operations and technological capabilities.",
+    "cards": {
+      "card_1": {
+        "title": "AI/ML & NLP Solutions",
+        "subtitle": "Drive innovation with machine learning, artificial intelligence, and natural language processing technologies."
+      },
+      "card_2": {
+        "title": "Data Analytics",
+        "subtitle": "Turn complex datasets into actionable insights to guide decision-making and strategic planning."
+      },
+      "card_3": {
+        "title": "Web Development",
+        "subtitle": "Build dynamic, responsive, and secure web applications to elevate your online presence."
+      },
+      "card_4": {
+        "title": "UI/UX Design",
+        "subtitle": "Craft intuitive, engaging, and visually compelling digital experiences."
+      },
+      "card_5": {
+        "title": "DevOps & Cloud",
+        "subtitle": "Accelerate development, automate deployments, and manage scalable cloud infrastructures."
+      }
+    }
   }
 }
