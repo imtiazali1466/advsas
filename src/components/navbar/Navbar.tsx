@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   Box,
   Flex,
@@ -28,6 +28,7 @@ const Navbar: React.FC = () => {
   const { t, i18n } = useTranslation();
   const activeSection = useScrollSpy(sections);
   const { isOpen, onToggle } = useDisclosure();
+  const [isScrolled, setIsScrolled] = useState(false);
 
   // Set 'home' as the active section by default if no section is active
   const currentActiveSection = activeSection || "home";
@@ -37,16 +38,28 @@ const Navbar: React.FC = () => {
   };
   const buttonPadding = useBreakpointValue({ base: 2, md: 3 });
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > window.innerHeight);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <Box
       as="nav"
       position="fixed"
       top={0}
       width="100%"
-      bg="white.900" // Dark background color
+      bg={isScrolled ? "white" : "transparent"} // Change background based on scroll
       py={4}
       zIndex="1000"
-      boxShadow="lg"
+      boxShadow={isScrolled ? "lg" : "none"} // Apply box shadow when scrolled
+      transition="background 0.3s ease, box-shadow 0.3s ease" // Smooth transition
     >
       <Flex justify="space-between" align="center" px={6}>
         {/* Logo */}
@@ -60,6 +73,7 @@ const Navbar: React.FC = () => {
 
         {/* Hamburger Icon for mobile */}
         <IconButton
+          background="navbar"
           aria-label="Toggle Navigation"
           icon={
             isOpen ? (
@@ -70,7 +84,14 @@ const Navbar: React.FC = () => {
           }
           onClick={onToggle}
           display={{ md: "none" }}
-          variant="ghost" // Transparent button for better aesthetics
+          variant="solid"
+          size="lg"
+          borderRadius="md"
+          _hover={{
+            bg: "grey.600",
+            transform: "scale(1.1)",
+            transition: "0.2s",
+          }}
         />
 
         {/* Navigation Links */}
@@ -107,10 +128,9 @@ const Navbar: React.FC = () => {
           >
             {t(`navbar.book`)}
           </Button>
-          {/* Language Selection and Social Icons for Desktop */}
         </HStack>
 
-        <HStack spacing={4}>
+        <HStack spacing={4} display={{ base: "none", md: "block" }}>
           <Menu>
             <MenuButton as={Button} variant="outline" colorScheme="teal">
               {i18n.language === "en" ? "English" : "Arabic"}
@@ -159,6 +179,22 @@ const Navbar: React.FC = () => {
               {t(`navbar.${section}`)}
             </NavbarLink>
           ))}
+          <Button
+            variant="link"
+            color={"text"} // Change to primary when active
+            padding={buttonPadding}
+            borderRadius={20}
+            fontWeight={"bold"}
+            borderWidth={"2px"}
+            background={theme.colors.white[100]}
+            borderColor={theme.colors.white[100]}
+            textTransform={"uppercase"}
+            _hover={{
+              borderColor: theme.colors.white[100], // Hover color from primary
+            }}
+          >
+            {t(`navbar.book`)}
+          </Button>
 
           {/* Language Selection and Social Icons moved to the collapsed menu */}
           <HStack spacing={4} mt={4}>

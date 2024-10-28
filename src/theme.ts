@@ -100,6 +100,7 @@ const styles = {
       color: "text",
       padding: 0,
       margin: 0,
+      overflowX: "hidden",
     },
     ".chakra-container": {
       padding: space[4],

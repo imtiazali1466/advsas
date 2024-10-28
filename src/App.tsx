@@ -7,9 +7,8 @@ import Navbar from "./components/navbar/Navbar";
 
 const App: React.FC = () => {
   return (
-    <Box>
+    <Box minWidth={"100%"}>
       <Navbar />
-      <Box textAlign="center" fontSize="xl" p={4}></Box>
     </Box>
   );
 };
