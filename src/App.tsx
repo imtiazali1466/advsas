@@ -6,6 +6,7 @@ import "./i18n";
 import Navbar from "./components/navbar/Navbar";
 import HeroSection from "./components/sections/Hero";
 import AboutSection from "./components/sections/About";
+import WhoWeAreSection from "./components/sections/WhoWeAre";
 
 const App: React.FC = () => {
   return (
@@ -14,6 +15,7 @@ const App: React.FC = () => {
       <HeroSection />
       <Box paddingX={8}>
         <AboutSection />
+        <WhoWeAreSection />
       </Box>
     </Box>
   );

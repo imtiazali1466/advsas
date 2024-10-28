@@ -21,5 +21,14 @@
     "description_part_1": "At Advance Services and Solutions, we specialize in delivering transformative IT services that empower businesses to excel in today’s fast-paced, technology-driven world. From ",
     "bold_part": "AI/ML NLP to Cloud Solutions",
     "description_part_2": ". Our team of experts is dedicated to driving efficiency, innovation, and growth."
+  },
+  "who_we_are": {
+    "title": "Who We Are?",
+    "description": "We are a team of experienced professionals passionate about using technology to solve complex business challenges. Our mission is to offer comprehensive IT services and solutions tailored to the needs of modern businesses. With deep expertise in ",
+    "bold_parts": "AI/ML NLP Data Analytics Web Development UI/UX Design DevOps Cloud Infrastructure ",
+    "additional_description": "We also specialize in Fintech, developing advanced platforms like ",
+    "awrag": "AWRAG Insights", "token": "TokenSage",
+    "final_description": " to help businesses harness the power of data and blockchain.",
+    "and": " and "
   }
 }
