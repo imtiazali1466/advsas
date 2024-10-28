@@ -1,4 +1,7 @@
 {
+  "navbar": {
+    "home": "Home", "about": "About Us", "services": "Services",  "projects": "PROJECTS", "blog":"Blog", "book": "Book A Call"
+  },
   "header": {
     "chooseLanguage": "Choose Language:"
   },
