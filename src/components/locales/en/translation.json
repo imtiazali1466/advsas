@@ -115,8 +115,37 @@
     "agreePrivacy": "You agree to our friendly",
     "privacyPolicy": "Privacy Policy",
     "submit": "Submit"
-  },"collaborate": {
+  },
+  "collaborate": {
     "title": "Have an amazing project in mind? let's collaborate!",
     "buttonText": "Book A Call"
+  },
+
+  "footer": {
+    "title": "Footer Title",
+    "description": "We Design & Develop amazing digital experiences that create more happy in the world.",
+    "links": {
+      "title": "Links",
+      "home": "Home",
+      "about_us": "About Us",
+      "services": "Services",
+      "feature": "Feature",
+      "project": "Project",
+      "blog": "Blog"
+    },
+    "social": {
+      "title": "Social",
+      "twitter": "Twitter",
+      "linkedin": "LinkedIn",
+      "facebook": "Facebook",
+      "instagram": "Instagram"
+    },
+    "legal": {
+      "title": "Legal",
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "cookies": "Cookies"
+    },
+    "credits": "© 2024 ADVAS. All rights reserved."
   }
 }

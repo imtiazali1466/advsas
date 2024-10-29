@@ -13,6 +13,7 @@ import OurWorkSection from "./components/sections/OurWork";
 import OurBlogSection from "./components/sections/OurBlog";
 import ContactFormSection from "./components/sections/ContactForm";
 import CollaborateSection from "./components/sections/Collaborate";
+import Footer from "./components/sections/Footer";
 
 const App: React.FC = () => {
   return (
@@ -29,6 +30,7 @@ const App: React.FC = () => {
         <ContactFormSection />
       </Box>
       <CollaborateSection />
+      <Footer />
     </Box>
   );
 };
