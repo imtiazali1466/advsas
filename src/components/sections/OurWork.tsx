@@ -54,47 +54,55 @@ const OurWorkSection: React.FC = () => {
 
       <Grid templateColumns={{ base: "1fr", md: "repeat(2, 1fr)" }} gap={6}>
         {projects.map((project, index) => (
-          <Box key={index}>
-            <Box textAlign="center">
-              <Box
-                borderWidth="2px" // Border around the image
-                borderColor="gray.400" // Border color
-                borderRadius="lg" // Border radius
-                boxShadow="md" // Shadow around the border
-                maxW={{ base: "100%", md: "800px" }} // Max width for the box
-              >
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  boxSize="100%" // Ensure image takes full width of the box
-                  objectFit="cover" // Maintain aspect ratio
-                  borderRadius="lg" // Match the border radius of the box
-                  mx="auto"
-                />
-              </Box>
+          <Box
+            key={index}
+            overflow="hidden"
+            transition="transform 0.2s"
+            _hover={{ transform: "scale(1.02)" }}
+          >
+            <Box
+              textAlign="center"
+              borderRadius="lg"
+              borderWidth="1px"
+              padding={"10px"}
+              borderColor="black.900"
+            >
+              <Image
+                cursor={"pointer"}
+                src={project.image}
+                alt={project.title}
+                boxSize="100%"
+                objectFit="cover"
+              />
             </Box>
-            <VStack align="start" mt={4}>
+            <VStack align="start" py={4} spacing={2}>
               <Box>
                 {project.tags.map((tag, tagIndex) => (
                   <Tag
                     key={tagIndex}
+                    cursor={"pointer"}
                     mr={2}
+                    my={2}
                     background={"transparent"}
                     color={"secondary.800"}
                     px={3}
-                    py={2}
+                    py={1}
                     borderWidth="1px"
                     borderColor="lavender.400"
                     borderRadius="lg"
+                    transition="background-color 0.2s"
+                    _hover={{ backgroundColor: "gray.100" }} // Subtle background change on hover
                   >
                     {tag}
                   </Tag>
                 ))}
               </Box>
-              <Heading as="h5" size="xl" lineHeight={4}>
+              <Heading as="h5" size="lg" lineHeight={4}>
                 {project.title}
               </Heading>
-              <Text fontSize={20}>{project.description}</Text>
+              <Text fontSize={16} color={"gray.600"}>
+                {project.description}
+              </Text>
             </VStack>
           </Box>
         ))}
