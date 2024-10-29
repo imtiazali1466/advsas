@@ -8,7 +8,8 @@ import HeroSection from "./components/sections/Hero";
 import AboutSection from "./components/sections/About";
 import WhoWeAreSection from "./components/sections/WhoWeAre";
 import ServiceSection from "./components/sections/Services";
-import TechStackSection from "./components/sections/TechStackSection";
+import TechStackSection from "./components/sections/TechStack";
+import OurWorkSection from "./components/sections/OurWork";
 
 const App: React.FC = () => {
   return (
@@ -20,6 +21,7 @@ const App: React.FC = () => {
         <AboutSection />
         <WhoWeAreSection />
         <ServiceSection />
+        <OurWorkSection />
       </Box>
     </Box>
   );

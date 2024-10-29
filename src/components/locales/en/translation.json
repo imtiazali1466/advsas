@@ -67,5 +67,23 @@
   },
   "techStack": {
     "title": "Join 4,000+ companies already growing"
+  },
+  "ourWork": {
+    "title": "Our work",
+    "mainTitle": "Explore some of our most beloved projects",
+    "subtitle": "We have witnessed our partners, ranging from established corporations to start-ups preparing to launch, achieve significant success. We are enthusiastic about seeing you thrive as well.",
+    "project_1": {
+      "title": "AWRAG Insights",
+      "description": "A financial data aggregation platform that brings real-time insights and storytelling to help businesses make informed decisions. It pulls data from trusted sources like Bloomberg, Refinitiv, S&P, and more."
+    },
+    "project_2": {
+      "title": "TokenSage",
+      "description": "A white-label Securities Token Offering (STO) platform that helps businesses tokenize their assets and raise capital. TokenSage provides a seamless and secure experience for launching and managing STOs"
+    },
+    "tags": {
+      "webDevelopment": "Web Development",
+      "uiUxDesign": "UI/UX Design",
+      "dataAnalytics": "Data Analytics"
+    }
   }
 }
