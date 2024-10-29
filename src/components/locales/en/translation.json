@@ -64,5 +64,88 @@
         "subtitle": "Accelerate development, automate deployments, and manage scalable cloud infrastructures."
       }
     }
+  },
+  "techStack": {
+    "title": "Join 4,000+ companies already growing"
+  },
+  "ourWork": {
+    "title": "Our work",
+    "mainTitle": "Explore some of our most beloved projects",
+    "subtitle": "We have witnessed our partners, ranging from established corporations to start-ups preparing to launch, achieve significant success. We are enthusiastic about seeing you thrive as well.",
+    "project_1": {
+      "title": "AWRAG Insights",
+      "description": "A financial data aggregation platform that brings real-time insights and storytelling to help businesses make informed decisions. It pulls data from trusted sources like Bloomberg, Refinitiv, S&P, and more."
+    },
+    "project_2": {
+      "title": "TokenSage",
+      "description": "A white-label Securities Token Offering (STO) platform that helps businesses tokenize their assets and raise capital. TokenSage provides a seamless and secure experience for launching and managing STOs"
+    },
+    "tags": {
+      "webDevelopment": "Web Development",
+      "uiUxDesign": "UI/UX Design",
+      "dataAnalytics": "Data Analytics",
+      "brandGuidelines": "BrandGuide Line"
+    }
+  },
+  "ourBlog": {
+    "sectionName": "Our Blog",
+    "pageTitle": "Stories and interviews",
+    "subtitle": "Subscribe to learn about new product features, the latest in technology, solutions, and updates.",
+    "emailPlaceholder": "Enter your email address",
+    "subscribe": "Subscribe",
+    "dataNotice": "We care about your data in our ",
+    "privacyPolicy": "Privacy Policy"
+  },
+  "contactForm": {
+    "sectionName": "Contact Us",
+    "pageTitle": "Get In Touch",
+    "subtitle": "We'd love to hear from you!",
+    "firstNameLabel": "First Name",
+    "firstNamePlaceholder": "Jhon",
+    "lastNameLabel": "Last Name",
+    "lastNamePlaceholder": "Doe",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "jhon.doe@example.com",
+    "countryLabel": "Country Code",
+    "countryPlaceholder": "US/UK/etc.",
+    "phoneLabel": "Phone Number",
+    "phonePlaceholder": "+1 (23) 456 789",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Type your message here",
+    "agreePrivacy": "You agree to our friendly",
+    "privacyPolicy": "Privacy Policy",
+    "submit": "Submit"
+  },
+  "collaborate": {
+    "title": "Have an amazing project in mind? let's collaborate!",
+    "buttonText": "Book A Call"
+  },
+
+  "footer": {
+    "title": "Footer Title",
+    "description": "We Design & Develop amazing digital experiences that create more happy in the world.",
+    "links": {
+      "title": "Links",
+      "home": "Home",
+      "about_us": "About Us",
+      "services": "Services",
+      "feature": "Feature",
+      "project": "Project",
+      "blog": "Blog"
+    },
+    "social": {
+      "title": "Social",
+      "twitter": "Twitter",
+      "linkedin": "LinkedIn",
+      "facebook": "Facebook",
+      "instagram": "Instagram"
+    },
+    "legal": {
+      "title": "Legal",
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "cookies": "Cookies"
+    },
+    "credits": "© 2024 ADVAS. All rights reserved."
   }
 }

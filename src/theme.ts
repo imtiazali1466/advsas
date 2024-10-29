@@ -107,6 +107,22 @@ const space = {
   12: "80px",
 };
 
+// Define line heights from 1 to 12
+const lineHeights = {
+  1: "1",
+  2: "1.25",
+  3: "1.5",
+  4: "1.75",
+  5: "2",
+  6: "2.25",
+  7: "2.5",
+  8: "2.75",
+  9: "3",
+  10: "3.25",
+  11: "3.5",
+  12: "4",
+};
+
 const styles = {
   global: {
     body: {
@@ -130,6 +146,7 @@ const theme = extendTheme({
   fonts,
   fontSizes,
   space,
+  lineHeights, // Add line heights to the theme
   styles,
 });
 
