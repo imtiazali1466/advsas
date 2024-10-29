@@ -74,7 +74,12 @@ const TechStackSection = () => {
                 delay: index * 0.25,
               }} // Adjust delay for staggering effect
             >
-              <Box as={tech.icon} boxSize={iconSize} color="gray.600" />
+              <Box
+                as={tech.icon}
+                margin={"auto"}
+                boxSize={iconSize}
+                color="gray.600"
+              />
             </MotionBox>
           ))}
         </Grid>
