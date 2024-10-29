@@ -115,5 +115,8 @@
     "agreePrivacy": "You agree to our friendly",
     "privacyPolicy": "Privacy Policy",
     "submit": "Submit"
+  },"collaborate": {
+    "title": "Have an amazing project in mind? let's collaborate!",
+    "buttonText": "Book A Call"
   }
 }

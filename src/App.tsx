@@ -12,6 +12,7 @@ import TechStackSection from "./components/sections/TechStack";
 import OurWorkSection from "./components/sections/OurWork";
 import OurBlogSection from "./components/sections/OurBlog";
 import ContactFormSection from "./components/sections/ContactForm";
+import CollaborateSection from "./components/sections/Collaborate";
 
 const App: React.FC = () => {
   return (
@@ -27,6 +28,7 @@ const App: React.FC = () => {
         <OurBlogSection />
         <ContactFormSection />
       </Box>
+      <CollaborateSection />
     </Box>
   );
 };
