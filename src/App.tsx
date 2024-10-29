@@ -11,6 +11,7 @@ import ServiceSection from "./components/sections/Services";
 import TechStackSection from "./components/sections/TechStack";
 import OurWorkSection from "./components/sections/OurWork";
 import OurBlogSection from "./components/sections/OurBlog";
+import ContactFormSection from "./components/sections/ContactForm";
 
 const App: React.FC = () => {
   return (
@@ -23,7 +24,8 @@ const App: React.FC = () => {
         <WhoWeAreSection />
         <ServiceSection />
         <OurWorkSection />
-        <OurBlogSection />y
+        <OurBlogSection />
+        <ContactFormSection />
       </Box>
     </Box>
   );

@@ -87,7 +87,7 @@
       "brandGuidelines": "BrandGuide Line"
     }
   },
-   "ourBlog": {
+  "ourBlog": {
     "sectionName": "Our Blog",
     "pageTitle": "Stories and interviews",
     "subtitle": "Subscribe to learn about new product features, the latest in technology, solutions, and updates.",
@@ -95,5 +95,25 @@
     "subscribe": "Subscribe",
     "dataNotice": "We care about your data in our ",
     "privacyPolicy": "Privacy Policy"
+  },
+  "contactForm": {
+    "sectionName": "Contact Us",
+    "pageTitle": "Get In Touch",
+    "subtitle": "We'd love to hear from you!",
+    "firstNameLabel": "First Name",
+    "firstNamePlaceholder": "Jhon",
+    "lastNameLabel": "Last Name",
+    "lastNamePlaceholder": "Doe",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "jhon.doe@example.com",
+    "countryLabel": "Country Code",
+    "countryPlaceholder": "US/UK/etc.",
+    "phoneLabel": "Phone Number",
+    "phonePlaceholder": "+1 (23) 456 789",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Type your message here",
+    "agreePrivacy": "You agree to our friendly",
+    "privacyPolicy": "Privacy Policy",
+    "submit": "Submit"
   }
 }
