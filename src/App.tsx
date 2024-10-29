@@ -8,6 +8,7 @@ import HeroSection from "./components/sections/Hero";
 import AboutSection from "./components/sections/About";
 import WhoWeAreSection from "./components/sections/WhoWeAre";
 import ServiceSection from "./components/sections/Services";
+import TechStackSection from "./components/sections/TechStackSection";
 
 const App: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const App: React.FC = () => {
       <Navbar />
       <HeroSection />
       <Box paddingX={8}>
+        <TechStackSection />
         <AboutSection />
         <WhoWeAreSection />
         <ServiceSection />
