@@ -86,5 +86,14 @@
       "dataAnalytics": "Data Analytics",
       "brandGuidelines": "BrandGuide Line"
     }
+  },
+   "ourBlog": {
+    "sectionName": "Our Blog",
+    "pageTitle": "Stories and interviews",
+    "subtitle": "Subscribe to learn about new product features, the latest in technology, solutions, and updates.",
+    "emailPlaceholder": "Enter your email address",
+    "subscribe": "Subscribe",
+    "dataNotice": "We care about your data in our ",
+    "privacyPolicy": "Privacy Policy"
   }
 }
