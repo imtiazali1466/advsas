@@ -22,7 +22,7 @@ import { useScrollSpy } from "../../hooks/useScrollSpy";
 import { FaTwitter, FaInstagram, FaGithub } from "react-icons/fa";
 import theme from "@/theme";
 
-const sections = ["home", "about", "services", "projects", "blog"];
+const sections = ["home", "about", "services", "projects", "contact"];
 
 const Navbar: React.FC = () => {
   const { t, i18n } = useTranslation();

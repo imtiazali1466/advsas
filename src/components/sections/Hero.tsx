@@ -1,3 +1,4 @@
+// HeroSection.tsx
 import React from "react";
 import {
   Box,
@@ -17,6 +18,8 @@ const HeroSection: React.FC = () => {
 
   return (
     <Box
+      id="home" // Add this id to match your scroll spy
+      position="relative"
       backgroundImage="url('/hero.png')"
       backgroundSize="cover"
       backgroundPosition="center"
@@ -29,7 +32,19 @@ const HeroSection: React.FC = () => {
       width="100%"
       px={{ base: 4, md: 8 }}
     >
-      <ScaleFade initialScale={0.9} in={true}>
+      {/* Dark overlay */}
+      <Box
+        position="absolute"
+        top={0}
+        left={0}
+        right={0}
+        bottom={0}
+        bg="rgba(0, 0, 0, 0.6)" // Adjust opacity as needed
+        zIndex={1}
+      />
+
+      {/* Content */}
+      <ScaleFade initialScale={0.9} in={true} style={{ zIndex: 2 }}>
         <VStack
           spacing={{ base: 4, md: 6 }}
           p={{ base: 3, md: 6 }}
@@ -68,10 +83,10 @@ const HeroSection: React.FC = () => {
             direction={isArabic ? "row-reverse" : "row"}
           >
             <Button
-              bg="accent.400" // Updated to a blue color scheme
+              bg="accent.400"
               color="white"
-              _hover={{ bg: "accent.500", transform: "scale(1.05)" }} // Scale effect on hover
-              transition="transform 0.2s" // Smooth transition for scale effect
+              _hover={{ bg: "accent.500", transform: "scale(1.05)" }}
+              transition="transform 0.2s"
               rightIcon={
                 <ArrowForwardIcon
                   transform={isArabic ? "rotate(-135deg)" : "rotate(-45deg)"}
@@ -81,10 +96,10 @@ const HeroSection: React.FC = () => {
               {t("buttons.getStarted")}
             </Button>
             <Button
-              bg="accent.400" // Updated to a blue color scheme
+              bg="accent.400"
               color="white"
-              _hover={{ bg: "accent.500", transform: "scale(1.05)" }} // Scale effect on hover
-              transition="transform 0.2s" // Smooth transition for scale effect
+              _hover={{ bg: "accent.500", transform: "scale(1.05)" }}
+              transition="transform 0.2s"
               rightIcon={
                 <ArrowForwardIcon
                   transform={isArabic ? "rotate(-135deg)" : "rotate(-45deg)"}
