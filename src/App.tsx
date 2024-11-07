@@ -1,4 +1,3 @@
-// src/App.tsx
 import React from "react";
 import { Box } from "@chakra-ui/react";
 import "./App.css";
@@ -16,10 +15,16 @@ import Footer from "./components/sections/Footer";
 
 const App: React.FC = () => {
   return (
-    <Box minWidth={"100vw"}>
+    <Box minWidth="100vw">
       <Navbar />
       <HeroSection />
-      <Box paddingX={8}>
+      <Box
+        paddingX={[
+          4, 6, 8, 12,
+        ]} /* Responsive padding for different screen sizes */
+        maxW="100vw" /* Restrict max width for larger screens */
+        mx="auto" /* Center content on larger screens */
+      >
         <Box id="about">
           <TechStackSection />
           <AboutSection />
