@@ -78,7 +78,7 @@ const ContactFormSection: React.FC = () => {
           <Box width="100%">
             <label>{t("contactForm.phoneLabel")}</label>
             <PhoneInput
-              country={"us"} // Default country
+              country={"sa"} // Default country
               placeholder={t("contactForm.phonePlaceholder")}
               inputStyle={{
                 borderColor: "gray.300",

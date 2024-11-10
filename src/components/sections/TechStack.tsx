@@ -42,10 +42,20 @@ const techStack = [
 
 const TechStackSection = () => {
   const { t } = useTranslation();
-  const iconSize = useBreakpointValue({ base: "60px", md: "70px" });
+
+  // Adjust icon size based on screen size (smaller on mobile)
+  const iconSize = useBreakpointValue({ base: "50px", md: "70px" });
+
+  // Adjust the grid layout for mobile to show three items per row
   const gridTemplateColumns = useBreakpointValue({
-    base: "repeat(2, 1fr)", // 2 columns on small screens
-    md: `repeat(${techStack.length}, 1fr)`, // full columns on medium and up
+    base: "repeat(3, 1fr)", // 3 columns on small screens
+    md: `repeat(${techStack.length}, 1fr)`, // full columns on medium screens and up
+  });
+
+  // Make gap responsive
+  const gridGap = useBreakpointValue({
+    base: 5, // No gap on mobile
+    md: 20, // Larger gap on medium screens and up
   });
 
   return (
@@ -57,7 +67,7 @@ const TechStackSection = () => {
       <Box overflow="hidden" width="100%">
         <Grid
           templateColumns={gridTemplateColumns}
-          gap={20}
+          gap={gridGap} // Apply responsive gap
           alignItems="center"
           justifyContent="center"
         >

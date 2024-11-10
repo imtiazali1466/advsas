@@ -3,9 +3,11 @@
     "home": "Home",
     "about": "About Us",
     "services": "Services",
-    "projects": "PROJECTS",
+    "projects": "projects",
     "contact": "Contact",
-    "book": "Book A Call"
+    "book": "Book A Call",
+    "english": "english",
+    "arabic": "arabic"
   },
   "hero": {
     "title": "Empowering Businesses Through Technology",
@@ -130,6 +132,7 @@
       "about_us": "About Us",
       "services": "Services",
       "feature": "Feature",
+      "contact": "Contact",
       "project": "Project",
       "blog": "Blog"
     },
