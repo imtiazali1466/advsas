@@ -23,12 +23,11 @@ const Footer: React.FC = () => {
     links: {
       title: t("footer.links.title") || "Links",
       items: [
-        { name: t("footer.links.home") || "Home", link: "#" },
-        { name: t("footer.links.about_us") || "About Us", link: "#" },
-        { name: t("footer.links.services") || "Services", link: "#" },
-        { name: t("footer.links.feature") || "Feature", link: "#" },
-        { name: t("footer.links.project") || "Project", link: "#" },
-        { name: t("footer.links.blog") || "Blog", link: "#" },
+        { name: t("footer.links.home") || "Home", link: "home" },
+        { name: t("footer.links.about_us") || "About Us", link: "about" },
+        { name: t("footer.links.services") || "Services", link: "services" },
+        { name: t("footer.links.project") || "Project", link: "projects" },
+        { name: t("footer.links.contact") || "Contact", link: "contact" },
       ],
     },
     social: {
@@ -48,6 +47,14 @@ const Footer: React.FC = () => {
         { name: t("footer.legal.cookies") || "Cookies", link: "#" },
       ],
     },
+  };
+
+  // Smooth scroll function
+  const handleScroll = (sectionId: string) => {
+    const targetSection = document.getElementById(sectionId);
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
@@ -86,7 +93,11 @@ const Footer: React.FC = () => {
                 key={index}
                 fontSize="sm"
                 _hover={{ color: "blue.500", textDecoration: "underline" }}
-                href={item.link}
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleScroll(item.link);
+                }}
+                href={`#${item.link}`}
               >
                 {item.name}
               </Link>
@@ -104,6 +115,8 @@ const Footer: React.FC = () => {
                 fontSize="sm"
                 _hover={{ color: "blue.500", textDecoration: "underline" }}
                 href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 {item.name}
               </Link>
@@ -170,7 +183,6 @@ const Footer: React.FC = () => {
           {t("footer.credits") || "Aaq, All rights reserved."}
         </Text>
         <Flex gap={4} fontSize={{ base: "20px", md: "24px" }}>
-          {/* Responsive font size */}
           <Link href="#" aria-label="Facebook" isExternal>
             <FaFacebook color="grey.200" />
           </Link>
