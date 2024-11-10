@@ -1,5 +1,6 @@
 import { extendTheme } from "@chakra-ui/react";
 
+// Define colors, fonts, space, etc.
 const colors = {
   primary: {
     100: "#EAB8E3", // Light shade
@@ -107,7 +108,6 @@ const space = {
   12: "80px",
 };
 
-// Define line heights from 1 to 12
 const lineHeights = {
   1: "1",
   2: "1.25",
@@ -123,6 +123,7 @@ const lineHeights = {
   12: "4",
 };
 
+// Define global styles
 const styles = {
   global: {
     body: {
@@ -141,13 +142,15 @@ const styles = {
   },
 };
 
+// Define the themes for both RTL and LTR
 const theme = extendTheme({
   colors,
   fonts,
   fontSizes,
   space,
-  lineHeights, // Add line heights to the theme
+  lineHeights,
   styles,
+  dir: "ltr", // Default direction
 });
 
 export default theme;
