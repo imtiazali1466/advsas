@@ -5,7 +5,9 @@
     "services": "Services",
     "projects": "projects",
     "contact": "Contact",
-    "book": "Book A Call"
+    "book": "Book A Call",
+    "english": "english",
+    "arabic": "arabic"
   },
   "hero": {
     "title": "Empowering Businesses Through Technology",

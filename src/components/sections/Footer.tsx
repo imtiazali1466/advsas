@@ -77,11 +77,13 @@ const Footer: React.FC = () => {
         {/* Links Section */}
         <Grid
           gridTemplateColumns={{
-            base: "1fr",
-            sm: "repeat(2, 1fr)",
-            md: "repeat(3, 1fr)",
+            base: "1fr", // 1 column for mobile
+            sm: "repeat(2, 1fr)", // 2 columns for small devices
+            md: "repeat(3, 1fr)", // 3 columns for medium devices
+            lg: "repeat(4, 1fr)", // 4 columns for large screens
           }}
           gap={8}
+          width="100%"
         >
           {/* Links */}
           <Flex direction="column" gap={2}>
@@ -179,8 +181,7 @@ const Footer: React.FC = () => {
         mt={4}
       >
         <Text fontSize="sm" color="gray.400" textAlign="center">
-          &copy; {new Date().getFullYear()}{" "}
-          {t("footer.credits") || "Aaq, All rights reserved."}
+          {t("footer.credits") || "© 2024 ADVAS. All rights reserved."}
         </Text>
         <Flex gap={4} fontSize={{ base: "20px", md: "24px" }}>
           <Link href="#" aria-label="Facebook" isExternal>

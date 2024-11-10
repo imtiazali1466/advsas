@@ -113,9 +113,11 @@ const Navbar: React.FC = () => {
             </NavbarLink>
           ))}
           <Button
+            as="a"
+            href="mailto:support@advsas.sa" 
             variant="link"
-            color={"text"} // Change to primary when active
-            padding={buttonPadding}
+            color={"text"}
+            padding="10px 20px" // Adjust button padding
             borderRadius={20}
             fontWeight={"bold"}
             borderWidth={"2px"}
@@ -126,18 +128,24 @@ const Navbar: React.FC = () => {
               borderColor: theme.colors.white[100], // Hover color from primary
             }}
           >
-            {t(`navbar.book`)}
+            {t("navbar.book")} {/* Replace with your translation key */}
           </Button>
         </HStack>
 
         <HStack spacing={4} display={{ base: "none", md: "block" }}>
           <Menu>
             <MenuButton as={Button} variant="outline" colorScheme="teal">
-              {i18n.language === "en" ? "English" : "Arabic"}
+              {i18n.language === "en"
+                ? t(`navbar.english`)
+                : t(`navbar.arabic`)}
             </MenuButton>
             <MenuList>
-              <MenuItem onClick={() => changeLanguage("en")}>English</MenuItem>
-              <MenuItem onClick={() => changeLanguage("ar")}>Arabic</MenuItem>
+              <MenuItem onClick={() => changeLanguage("en")}>
+                {t(`navbar.english`)}
+              </MenuItem>
+              <MenuItem onClick={() => changeLanguage("ar")}>
+                {t(`navbar.arabic`)}
+              </MenuItem>
             </MenuList>
           </Menu>
           <IconButton
@@ -200,13 +208,18 @@ const Navbar: React.FC = () => {
           <HStack spacing={4} mt={4}>
             <Menu>
               <MenuButton as={Button} variant="outline" colorScheme="teal">
-                {i18n.language === "en" ? "English" : "Arabic"}
+                {i18n.language === "en"
+                  ? t(`navbar.english`)
+                  : t(`navbar.arabic`)}
               </MenuButton>
               <MenuList>
                 <MenuItem onClick={() => changeLanguage("en")}>
-                  English
+                  {t(`navbar.english`)}
                 </MenuItem>
-                <MenuItem onClick={() => changeLanguage("ar")}>Arabic</MenuItem>
+                <MenuItem onClick={() => changeLanguage("ar")}>
+                  {" "}
+                  {t(`navbar.arabic`)}
+                </MenuItem>
               </MenuList>
             </Menu>
             <IconButton

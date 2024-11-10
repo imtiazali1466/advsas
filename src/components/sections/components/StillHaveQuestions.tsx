@@ -63,6 +63,8 @@ const StillHaveQuestionsComponent: React.FC = () => {
             {t("still_have_question.subtitle")}
           </Text>
           <Button
+            as="a"
+            href="mailto:support@advsas.sa"
             size="lg"
             bg="secondary.400"
             color={"black.100"}
