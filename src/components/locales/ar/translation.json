@@ -98,7 +98,7 @@
     "dataNotice": "نهتم ببياناتك في ",
     "privacyPolicy": "سياسة الخصوصية"
   },
-  "contactForm": {
+ "contactForm": {
     "sectionName": "اتصل بنا",
     "pageTitle": "تواصل معنا",
     "subtitle": "يسعدنا سماعك!",
@@ -116,7 +116,10 @@
     "messagePlaceholder": "اكتب رسالتك هنا",
     "agreePrivacy": "أنت توافق على ",
     "privacyPolicy": "سياسة الخصوصية",
-    "submit": "إرسال"
+    "submit": "إرسال",
+    "successMessage": "شكراً لتواصلك معنا!",
+    "thankYouMessage": "تم إرسال رسالتك بنجاح. سنرد عليك قريباً.",
+    "sendAnotherMessage": "إرسال رسالة أخرى"
   },
   "collaborate": {
     "title": "هل لديك مشروع رائع في ذهنك؟ دعنا نتعاون!",
